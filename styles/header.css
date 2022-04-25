@@ -1,0 +1,43 @@
+#name {
+  padding-left: 2%;
+  font-size: x-large;
+  font-weight: normal;
+}
+
+#container {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-content: center;
+  background-color: #fafafa;
+  box-shadow: rgba(38, 50, 56, 0.1) 0px 4px 6px 0px;
+}
+
+#links {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-self: center;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+.tag {
+  padding: 0.6rem;
+  border-color: #0d1522;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+}
+
+.tag:hover {
+  transition: border-color 0.5s ease;
+  border: 1px solid gray;
+}
+
+.active-tag{
+  border: 1px solid #0d1522;
+}
+
+a.active {
+  font-weight: bold;
+}

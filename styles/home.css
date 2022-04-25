@@ -1,0 +1,9 @@
+body{
+  background: linear-gradient(-10deg, #0d1522 37%, #fafafa 37%);
+  width: 100%;
+}
+
+
+#content {
+    height: 50rem;
+}

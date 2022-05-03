@@ -1,5 +1,5 @@
 #name {
-  padding-left: 2%;
+  padding: 1rem 0;
   font-size: x-large;
   font-weight: normal;
 }
@@ -7,7 +7,7 @@
 #container {
   height: 10vh;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% 20%;
   place-content: center;
   background-color: #fafafa;
   box-shadow: rgba(38, 50, 56, 0.1) 0px 4px 6px 0px;

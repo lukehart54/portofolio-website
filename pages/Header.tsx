@@ -15,6 +15,13 @@ interface HeaderProps {
 export default function Header() {
 
   const [activePage, setActivePage] = useState('home');
+  const tabsArr = [
+    '',
+    'about',
+    'contact',
+    'projects',
+    'https://github.com/lukehart54',
+  ];
 
   return (
     <div id="container">
@@ -33,21 +40,13 @@ export default function Header() {
 
 function HeaderLink(props: HeaderProps) {
 
-    const [activePage, setActivePage] = useState('home');
 
-    if (activePage === props.page) {
-      return (
-        <Link href={props.href}>
-          <a className={props.className + ' active-tag'}>{props.page}</a>
-        </Link>
-      );
-    } else {
-      return (
+  return (
         <Link href={props.href}>
           <a className={props.className}>{props.page}</a>
         </Link>
-      );
-    }
+    
+  );
 
 
 }

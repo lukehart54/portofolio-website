@@ -1,0 +1,10 @@
+#a-section {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 60% 50%;
+}
+
+#left{
+    font-size: x-large;
+width: 50vh;
+}

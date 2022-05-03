@@ -1,0 +1,31 @@
+.group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    place-items: center;
+    place-self: center;
+    grid-gap: 3px;
+}
+
+.proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1522;
+    height: 30vh;
+    width: 30vh;
+    border: 1px solid #0d1522;
+    color: blanchedalmond;
+}
+
+.proj:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .group {
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+    }
+}
+    

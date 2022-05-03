@@ -9,7 +9,7 @@ import me from '../public/tempme.png';
 export default function About() {
   return (
     <div className="home">
-      <title>My Website</title>
+      <title>About</title>
       <Header />
       <div id="a-section">
         <div id="left">

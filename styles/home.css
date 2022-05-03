@@ -6,6 +6,7 @@ body {
 }
 
 #content {
+  
   display: grid;
   grid-template-rows: 1fr 1fr;
   place-content: center;
@@ -27,6 +28,7 @@ body {
 }
 
 .welcome {
+  width: 30rem;
   padding-top: 100px;
   font-size: 2em;
   color: #0d1522;

@@ -11,15 +11,13 @@ interface HeaderProps {
   page: string;
 }
 
-
 export default function Header() {
-
   const [activePage, setActivePage] = useState('home');
-  const tabsArr = [
-    '',
+  const tempArr = [
+    '/',
     'about',
-    'contact',
     'projects',
+    'contact',
     'https://github.com/lukehart54',
   ];
 
@@ -28,28 +26,23 @@ export default function Header() {
       <h1 id="name">LUKE HARTLEY</h1>
 
       <div id="links">
-        <HeaderLink href="/" className="tag" page="Home" />
-        <HeaderLink href="/about" className="tag" page="About" />
-        <HeaderLink href="/projects" className="tag" page="Projects" />
-        <HeaderLink href="/contact" className="tag" page="Contact" />
-        <HeaderLink href="https://github.com/lukehart54" className="tag" page="Github"/>
+        {tempArr.map((link) => (
+          <Link href={link} key={link}>
+            <a
+              onClick={() => {
+                setActivePage(link);
+              }}
+              className={link === activePage ? 'tag active-tag' : 'tag'}
+            >
+              {link === '/' ? 'home' : link.length > 10 ? 'Github' : link}
+            </a>
+          </Link>
+        ))}
       </div>
     </div>
   );
 }
 
-function HeaderLink(props: HeaderProps) {
-
-
-  return (
-        <Link href={props.href}>
-          <a className={props.className}>{props.page}</a>
-        </Link>
-    
-  );
-
-
-}
 /*
             onClick={() => {
               setActivePage('home');
